@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from './Redux/store';  // Your Redux store
+import { BrowserRouter } from 'react-router-dom';
 
+// Create a root using the `createRoot` API (new in React 18)
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the App inside the root
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
