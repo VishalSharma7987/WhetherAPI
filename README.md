@@ -21,6 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 ### Live Link : https://67f50613c0a8673b1fed175a--candid-alfajores-82c8f4.netlify.app/
+## NOTE: add a Ootdoor text in a task bar then it show a whether athorwise it show N/A
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
